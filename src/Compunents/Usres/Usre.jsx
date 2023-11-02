@@ -1,12 +1,19 @@
 import { useLoaderData } from "react-router-dom";
+import User from "../../assets/User/Users/User";
 
 
 const Usre = () => {
-    const usres = useLoaderData ()
+    const users = useLoaderData ()
+ 
     return (
         <div>
-            <h1>Usre:{usres.length}</h1>
-            <h2>My website users</h2>
+          
+            <h1>My website users</h1>
+            <div>
+                {
+                    users.map(user => <User key={user.id} user={user}></User>)
+                }
+            </div>
         </div>
     );
 };
