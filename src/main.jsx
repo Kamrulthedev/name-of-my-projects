@@ -10,7 +10,7 @@ import {
 import Home from './Compunents/Home/Home.jsx';
 import About from './Compunents/About/About';
 import Contect from './Compunents/Contect/Contect';
-import Usre from './Compunents/Usres/Usre.jsx';
+import Usre from './Compunents/Usres/Usre.jsx'; 
 
 
 const router = createBrowserRouter([{

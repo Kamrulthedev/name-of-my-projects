@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 const User = ({user}) => {
     // eslint-disable-next-line no-unused-vars
     const {id, name, phone, username, website, email} = user;
@@ -16,6 +18,7 @@ const User = ({user}) => {
             <h3>Contect No: {phone}</h3> <p>Username:{username}</p>
             <h4>User Website: {website}</h4>
             <p>Email:{email}</p>
+            <Link to={`/user/${id}`}>Show Details</Link>
 
         </div>
     );
