@@ -10,19 +10,27 @@ import {
 import Home from './Compunents/Home/Home.jsx';
 import About from './Compunents/About/About';
 import Contect from './Compunents/Contect/Contect';
+import Usre from './Compunents/Usres/Usre.jsx';
 
 
 const router = createBrowserRouter([{
   path: '/',
   element: <Home></Home>,
   children : [
+    
   {
     path : '/about',
      element : <About></About>
   },
   {
     path: '/Contect',
+   
     element : <Contect></Contect>
+  },
+  {
+    path: '/Users',
+    loader : ()=>fetch('https://jsonplaceholder.typicode.com/users'),
+    element : <Usre></Usre>
   }
   ]
 }
