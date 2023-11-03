@@ -14,11 +14,13 @@ import Usre from './Compunents/Usres/Usre.jsx';
 import UserDetiles from './assets/User/Users/UserDetils/UserDetiles.jsx';
 import Posts from './assets/User/Users/Posts/Posts.jsx';
 import PostDetails from './assets/User/Users/PostDetails/PostDetails.jsx';
+import Erropage from './assets/User/Users/ErroPage/Erropage.jsx';
 
 
 const router = createBrowserRouter([{
   path: '/',
   element: <Home></Home>,
+  errorElement: <Erropage></Erropage>,
   children : [
     
   {
