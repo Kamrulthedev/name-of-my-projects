@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 import './Hader.css'
 
 
+
 const Hader = () => {
     return (
-        <div className="diver">
+        <div >
             <h2>Navber</h2>
             <nav>
              <Link to={'/'}>Home</Link>
@@ -12,6 +13,8 @@ const Hader = () => {
              <Link to={'/Contect'}>Contect Us</Link>
              <br></br>
              <Link to={'/Users'}>Users</Link>
+             <br></br>
+             <Link to={'/Posts'}>Posts</Link>
             </nav>
         </div>
     );
