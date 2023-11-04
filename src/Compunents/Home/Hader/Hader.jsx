@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import { Link, NavLink } from "react-router-dom";
 import './Hader.css'
 
 
@@ -8,13 +9,16 @@ const Hader = () => {
         <div >
             <h2>Navber</h2>
             <nav>
-             <Link to={'/'}>Home</Link>
-             <Link to={'/About'}> About Us</Link>
-             <Link to={'/Contect'}>Contect Us</Link>
-             <br></br>
-             <Link to={'/Users'}>Users</Link>
-             <br></br>
-             <Link to={'/Posts'}>Posts</Link>
+             <NavLink to={'/'}>Home</NavLink>
+             <NavLink to={'/About'}>About</NavLink>
+             <NavLink to={'/Contect'}>Constsct </NavLink>
+           
+             
+             <NavLink to={'/Users'}>Users</NavLink>
+
+            
+             <NavLink to={'/Posts'}>Posts</NavLink>
+             
             </nav>
         </div>
     );
